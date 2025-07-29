@@ -32,7 +32,7 @@
       const textureLoader = new THREE.TextureLoader();
       textureLoader.setCrossOrigin("anonymous");
       // サンプル画像（差し替え推奨）
-      textureLoader.load("https://storage.googleapis.com/studio-design-asset-files/projects/1YWj6p4KWm/s-530x221_webp_5a26bfd0-5204-4556-a45e-8c3fefa4b9e1.png", (texture) => {
+      textureLoader.load("https://threejsfundamentals.org/threejs/resources/images/wall.jpg", (texture) => {
         const geometry = new THREE.PlaneGeometry(3, 3);
         const material = new THREE.MeshBasicMaterial({ map: texture, transparent: true, side: THREE.DoubleSide });
         const logo = new THREE.Mesh(geometry, material);
